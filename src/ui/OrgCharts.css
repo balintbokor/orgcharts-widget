@@ -1,0 +1,15 @@
+.diagram-component {
+    width: 100%;
+    height: 100vh;
+    border: solid 1px black;
+    margin-bottom: 10px;
+  }
+  .hidden {
+    display: none;
+  }
+  .error {
+    color: red;
+  }
+  .diagramHeader {
+    text-align: center;
+  }

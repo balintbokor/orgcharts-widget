@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="hydro.orgcharts.OrgCharts" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Org Charts</name>
+    <description>Display multiple organization charts and export them to PowerPoint.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="chartEntityList" type="datasource" isList="true" required="true">
+                <caption>Data source</caption>
+                <description />
+            </property>
+            <property key="nodedataChartEntity" type="attribute" dataSource="chartEntityList" required="true">
+                <caption>Nodedata</caption>
+                <description>JSON array for the nodes</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="linkdataChartEntity" type="attribute" dataSource="chartEntityList" required="false">
+                <caption>Linkdata</caption>
+                <description>JSON array for the links</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="header" type="attribute" dataSource="chartEntityList" required="false">
+                <caption>Header</caption>
+                <description>Chart header</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="showDiagrams" type="boolean" defaultValue="true">
+                <caption>Show diagrams</caption>
+                <description/>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
